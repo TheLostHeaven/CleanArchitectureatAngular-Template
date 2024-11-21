@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass",
+          "style": "scss",
           "standalone": false
         },
         "@schematics/angular:directive": {
@@ -29,10 +29,13 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "sass",
+            "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico","src/assets"],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeflex/primeflex.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -92,6 +95,19 @@
                   "with": "src/environments/environment.dev.ts"
                 }
               ]
+            },
+            "fake": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "outputHashing": "none",
+              "fileReplacements": [
+                {
+                  "replace": "src/app/core/service-providers/service-provider.module.ts",
+                  "with": "src/app/core/service-providers/service-provider.module.fake.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -109,6 +125,9 @@
             },
             "dev": {
               "buildTarget": "Front-AC:build:dev"
+            },
+            "fake": {
+              "buildTarget": "Front-AC:build:fake"
             }
           },
           "defaultConfiguration": "dev"
@@ -125,13 +144,16 @@
           "builder": "@angular-builders/jest:run",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "sass",
+            "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico","src/assets"],
-            "styles": ["src/styles.sass"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
       }
     }
-  }
+  },
+  "cli": {
+    "analytics": false
+ }
 }
