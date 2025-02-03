@@ -13,8 +13,7 @@
     "build:qa": "ng build --configuration=qa",
     "build:dev": "ng build --configuration=dev",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:Front-AC": "node dist/front-ac/server/server.mjs"
+    "test": "jest --coverage"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +34,7 @@
     "primeicons": "^7.0.0",
     "primeng": "^17.18.11",
     "rxjs": "~7.8.0",
+    "ts-node": "^10.9.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
