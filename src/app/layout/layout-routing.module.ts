@@ -8,7 +8,7 @@ const routes: Routes = [
     redirectTo: "/auth/login",
     pathMatch: 'full'
   },
-  { path: 'auth', loadChildren: () => import ('../features/Auth/presentation/auth.module').then(m => m.AuthModule) },
+  { path: 'auth', loadChildren: () => import ('../features/auth/presentation/auth.module').then(m => m.AuthModule) },
   {
     path: '**',
     component: PageNotFoundComponent
