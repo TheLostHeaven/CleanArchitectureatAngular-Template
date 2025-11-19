@@ -1,5 +1,5 @@
 
-# PowerFix - Angular
+# CleanArchitectureatAngular-Template - Angular V17
 
 Este proyecto esta generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.10.
 
@@ -12,8 +12,6 @@ Este proyecto esta generado con [Angular CLI](https://github.com/angular/angular
 - [Instalación](#instalacion)
 - [Configuración](#configuracion)
 - [Uso](#uso)
-- [Back-End](#Back-End)
-- [Despliegue](#Despliegue)
 - [Contacto](#contacto)
 - [Autores](#autores)
 
@@ -93,14 +91,6 @@ http://localhost:4200/register
 http://localhost:4200/login
 http://localhost:4200/home
 ```
-
-## Back-End
-
-Tambien puedes ver el lado del Back-End Desde [aquí](https://github.com/TheLostHeaven/Back-end-Grupo5)
-
-## Despliegue
-
-#### En Construcción
 
 ## Contacto
 Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarrollar este proyecto, no dudes en contactarme en [tiquedaniel2002@gmail.com](tiquedaniel2002@gmail.com).
