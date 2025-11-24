@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Front-AC": {
+    "CleanArchitectureat": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/front-ac",
+            "outputPath": "dist/cleanarchitectureat",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -118,16 +118,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "prod": {
-              "buildTarget": "Front-AC:build:prod"
+              "buildTarget": "CleanArchitectureat:build:prod"
             },
             "qa": {
-              "buildTarget": "Front-AC:build:qa"
+              "buildTarget": "CleanArchitectureat:build:qa"
             },
             "dev": {
-              "buildTarget": "Front-AC:build:dev"
+              "buildTarget": "CleanArchitectureat:build:dev"
             },
             "fake": {
-              "buildTarget": "Front-AC:build:fake"
+              "buildTarget": "CleanArchitectureat:build:fake"
             }
           },
           "defaultConfiguration": "dev"
@@ -135,7 +135,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Front-AC:build"
+            "buildTarget": "CleanArchitectureat:build"
           }
         },
 

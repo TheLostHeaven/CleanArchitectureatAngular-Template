@@ -19,16 +19,16 @@ describe('layoutComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Front-AC'`, () => {
+  it(`should have as title 'CleanArchitectureat'`, () => {
     const fixture = TestBed.createComponent(LayoutComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Front-AC');
+    expect(app.title).toEqual('CleanArchitectureat');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(LayoutComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Front-AC');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, CleanArchitectureat');
   });
 });

@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
-  title = 'Front-AC';
-
+  title = 'CleanArchitectureat';
 }
